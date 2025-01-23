@@ -135,6 +135,7 @@ export const LogInService = async(req, res) => {
    })
    const tokens = { accessToken , refreshToken }
 
+   console.log('tokens' , tokens)
    res.status(200).json({ message: 'User logged in successfully', tokens })
 }
 
